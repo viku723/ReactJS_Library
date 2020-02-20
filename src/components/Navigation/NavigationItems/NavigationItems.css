@@ -1,0 +1,46 @@
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.NavigationItems a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+}
+.ManageBooksList {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    background-color: #fff;
+    color: #fff;
+    padding: 2%;
+    top: 34%;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0px black;
+}
+
+
+@media (min-width: 500px) {
+    .NavigationItems {
+        flex-flow: row;
+    }
+    .ManageBooksList {
+        background-color: gray;
+        top: 100%;
+    }
+}
